@@ -1,0 +1,103 @@
+body {
+    background-color: whitesmoke;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    width: 75px;
+}
+
+hr {
+    width: 400px;
+}
+
+.pingDisplay {
+    display: flex;
+}
+
+.pingDisplay *{
+    margin: 10px;
+}
+
+.pingOne, .pingTwo {
+    background-color: white ;
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pingOneParent, .pingTwoParent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pingContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* ping explanation handled, within next comment*/
+.contentExplanationParent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contentExplanation {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* ping explanation handled, within previous comment */
+
+/* removes arrow increments from input fields */
+/* not my code, found at https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* mobile responsiveness */
+@media only screen and (max-width: 500px) {
+    hr {
+        width: 200px;
+    }
+    
+    .pingContent {
+        width: 80%;
+    }
+
+    .pingOne, .pingTwo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contentExplanation {
+        width: 80%;
+    }
+}

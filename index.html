@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+    <div class="mainContent">
+        <h1>Ping Comparison</h1>
+        <div class="pingContent">
+            <div class="pingDisplay">
+                <div class="pingOneParent">
+                    <p>Ping:<input id="pingInputOne" type="number" placeholder="0">MS</p>
+                    <div id="pingDivOne" class="pingOne">
+                    </div>
+                </div>
+                <div class="pingTwoParent">
+                    <p>Ping:<input id="pingInputTwo" type="number" placeholder="0">MS</p>
+                    <div id="pingDivTwo" class="pingTwo">
+                    </div>
+                </div>
+        </div>
+            <button id="mainButton">Compare Ping</button>
+        </div>
+    </div>
+    <div class="contentExplanationParent">
+    <hr>
+    <button id="explainPing">What is ping?</button>
+    <button id="hidePingDescription" hidden>Hide Description</button>
+        <div id="contentExplanation" class="contentExplanation" style="display: none;">
+            <h1>What is ping?</h1>
+            <p>
+                - Ping is a unit that represents the amount of time it takes for an online service process a user's input. Ping is handled in units of milliseconds(ms).
+                <br>
+                <br>
+                -
+                Ping value covers the "round trip" time, from a user sending a response, to the server receiving and handling the response, to the server sending the reponse back to the user's device.
+                <br>
+                <br>
+                -
+                Ping is influenced by the distance between the user, and the server that hosts the online product. If a user is close to the server, they will have a low ping. If a user is far away from a server, they will have a high ping.
+                <br>
+                <br>
+                -
+                Example: if you are playing an online video game, and your ping is 300ms, if you click a button to move your character, it will take 300ms for the server to fulfill your request, and update your device. You will need to wait 300ms for your desired action to take effect.
+                <br>
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Ping_(networking_utility)" target="_blank">Click for more information.</a>
+        </div>
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
